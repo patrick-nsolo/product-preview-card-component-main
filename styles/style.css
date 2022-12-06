@@ -1,0 +1,89 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/*Styling starts here*/
+body{
+    background-color: var(--Cream);
+}
+img{
+    background-image: url('../assets/images/image-product-desktop.jpg');
+  }
+
+
+
+@media only screen and (min-width:375px){
+    img{
+        max-width:370px;
+        padding:30px;
+        border-top-left-radius:40px ;
+        border-top-right-radius: 40px;
+        margin-left: 20px; 
+          
+    }
+    main{
+        background-color: white;
+        max-width: 330px;   
+        margin-left: 50px;
+        padding:20px;
+        margin-top: -50px;
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius: 20px;
+    }
+    button{
+        background-color: var(--Dark-cyan);
+        border-style: none;
+        color:white;
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+    button:hover{
+        background-color:hsl(158, 52%, 18%) ;
+    }
+    .product_description{
+        padding: 20px;
+    }
+    .attribution{
+        margin-top: 10px;
+    }
+    h4{
+        font-family: futura bk !important;
+        letter-spacing: 7px;
+        color: grey;
+    }
+    .product_name{
+        font-family: Montserrat !important;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .description{
+        font-size: 14px;
+        font-family: futura bk !important;
+        line-height: 30px;
+        max-width: 250px;
+        color: grey;
+    }
+    .discount_price{
+        font-weight: 800;
+        font-size: 35px;
+        color: hsl(158, 36%, 37%);
+    }
+    .price{
+        margin-left: 130px;
+        margin-top: -65px;
+        text-decoration: line-through; 
+        color: grey;
+    }
+    
+
+
+}
