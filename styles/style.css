@@ -46,8 +46,10 @@ button{
     border-radius: 10px;
     color:white;
     font-weight: bold;
-    background-image: url('./images/icon-cart.svg');
-    /*margin-bottom: 10px;*/
+    background-image: url('../images/icon-cart.svg');/*add cart image to the button*/
+    background-repeat: no-repeat;/*remove the repeating cart images*/
+}
+    
 }
 button:hover{
     background-color:hsl(158, 49%, 21%);
@@ -55,7 +57,7 @@ button:hover{
 .button{
     text-align: center;
     margin-top: -30px;
-}
+} 
 
 .product_info{
     background-color: white;
