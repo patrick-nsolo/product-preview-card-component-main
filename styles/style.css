@@ -1,8 +1,8 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: 10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 :root{
-    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan: hsl(158, 35%, 40%);
     --Cream: hsl(30, 38%, 92%);
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -12,78 +12,89 @@
 /*Styling starts here*/
 body{
     background-color: var(--Cream);
+    font-size: 0px;
+    margin-left: 10px;
+}
+main{
+    margin-left: 450px;
+    display: inline-block;/*how i joined the image and info blocks together*/
+    margin-top:100px;
 }
 img{
-    background-image: url('../assets/images/image-product-desktop.jpg');
-  }
-
-
-
-@media only screen and (min-width:375px){
-    img{
-        max-width:370px;
-        padding:30px;
-        border-top-left-radius:40px ;
-        border-top-right-radius: 40px;
-        margin-left: 20px; 
-          
-    }
-    main{
-        background-color: white;
-        max-width: 330px;   
-        margin-left: 50px;
-        padding:20px;
-        margin-top: -50px;
-        border-bottom-left-radius:20px ;
-        border-bottom-right-radius: 20px;
-    }
-    button{
-        background-color: var(--Dark-cyan);
-        border-style: none;
-        color:white;
-        width: 300px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 15px;
-    }
-    button:hover{
-        background-color:hsl(158, 52%, 18%) ;
-    }
-    .product_description{
-        padding: 20px;
-    }
-    .attribution{
-        margin-top: 10px;
-    }
-    h4{
-        font-family: futura bk !important;
-        letter-spacing: 7px;
-        color: grey;
-    }
-    .product_name{
-        font-family: Montserrat !important;
-        font-weight: bold;
-        font-size: 35px;
-    }
-    .description{
-        font-size: 14px;
-        font-family: futura bk !important;
-        line-height: 30px;
-        max-width: 250px;
-        color: grey;
-    }
-    .discount_price{
-        font-weight: 800;
-        font-size: 35px;
-        color: hsl(158, 36%, 37%);
-    }
-    .price{
-        margin-left: 130px;
-        margin-top: -65px;
-        text-decoration: line-through; 
-        color: grey;
-    }
+    max-width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
     
+}
+h4{
+    font-size: 12px;
+    font-family:Tahoma;
+    font-weight: 200;
+    letter-spacing: 7px;
+    margin-top: -2px;
+    color: hsl(228, 12%, 48%);
 
+}
+p{
+    color: hsl(228, 12%, 48%);
+}
+button{
+    background-color: var(--Dark-cyan);
+    width:250px;
+    height:40px;
+    border-style: none;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    background-image: url('./images/icon-cart.svg');
+    /*margin-bottom: 10px;*/
+}
+button:hover{
+    background-color:hsl(158, 49%, 21%);
+}
+.button{
+    text-align: center;
+    margin-top: -30px;
+}
 
+.product_info{
+    background-color: white;
+    height: 450px;
+    max-width:300px;
+    margin-right: 450px;
+    font-size: 23px;
+    float: right; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;       
+}
+.product_description{
+    padding:30px;
+}
+.product_name{
+    font-size: 40px;
+    line-height: 35px;
+    margin-top: -1px;
+}
+.description{
+    font-size: 14px;
+    font-family:Tahoma;
+    font-weight: 200;
+    max-width: 200px;
+    margin-top: -2px;
+    
+}
+.prices{
+    display: flex;/*make prices appear side by side*/
+    margin-top: -5px;
+}
+.discount_price{
+    color:var(--Dark-cyan);
+    font-size: 30px;
+    font-weight: 800;
+}
+.sale_price{
+    font-size: 15px;
+    margin-top: 38px;
+    margin-left: 20px;
+    text-decoration: line-through;
 }
