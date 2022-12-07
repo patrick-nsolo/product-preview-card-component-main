@@ -45,18 +45,24 @@ button{
     border-style: none;
     border-radius: 10px;
     color:white;
-    font-weight: bold;
-    background-image: url('../images/icon-cart.svg');/*add cart image to the button*/
-    background-repeat: no-repeat;/*remove the repeating cart images*/
+    font-weight: bold; 
+    position: relative; /*places button under the cart*/  
 }
-    
-}
+.icon_cart{
+    position: absolute;/*places cart over the button*/
+    width:15px;
+    z-index: 1;/*actually shows the cart*/
+    margin-left: 60px;
+    margin-top: 10px;
+}    
 button:hover{
     background-color:hsl(158, 49%, 21%);
+    cursor: pointer;
 }
 .button{
     text-align: center;
-    margin-top: -30px;
+    margin-top: -20px;
+    
 } 
 
 .product_info{

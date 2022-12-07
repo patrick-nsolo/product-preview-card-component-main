@@ -1,67 +1,8 @@
-@media only screen and (min-width:375px){
-    img{
-        max-width:370px;
-        padding:30px;
-        border-top-left-radius:40px ;
-        border-top-right-radius: 40px;
-        margin-left: 20px; 
-          
+@media only screen and (max-width:375px){
+    .mobile_image{
+        background-image: url(../images/image-product-mobile.jpg);
     }
-    main{
-        background-color: white;
-        max-width: 330px;   
-        margin-left: 50px;
-        padding:20px;
-        margin-top: -50px;
-        border-bottom-left-radius:20px ;
-        border-bottom-right-radius: 20px;
-    }
-    button{
-        background-color: var(--Dark-cyan);
-        border-style: none;
-        color:white;
-        width: 300px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 15px;
-    }
-    button:hover{
-        background-color:hsl(158, 52%, 18%) ;
-    }
-    .product_description{
-        padding: 20px;
-    }
-    .attribution{
-        margin-top: 10px;
-    }
-    h4{
-        font-family: futura bk !important;
-        letter-spacing: 7px;
-        color: grey;
-    }
-    .product_name{
-        font-family: Montserrat !important;
-        font-weight: bold;
-        font-size: 35px;
-    }
-    .description{
-        font-size: 14px;
-        font-family: futura bk !important;
-        line-height: 30px;
-        max-width: 250px;
-        color: grey;
-    }
-    .discount_price{
-        font-weight: 800;
-        font-size: 35px;
-        color: hsl(158, 36%, 37%);
-    }
-    .price{
-        margin-left: 130px;
-        margin-top: -65px;
-        text-decoration: line-through; 
-        color: grey;
-    }
+    
     
 
 
