@@ -1,115 +1,51 @@
-.attribution { font-size: 11px; text-align: center; margin-top: 10px;}
-.attribution a { color: hsl(228, 45%, 44%); }
-
-:root{
-    --Dark-cyan: hsl(158, 35%, 40%);
-    --Cream: hsl(30, 38%, 92%);
-    --Very-dark-blue: hsl(212, 21%, 14%);
-    --Dark-grayish-blue: hsl(228, 12%, 48%);
-    --White: hsl(0, 0%, 100%);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+/*applies every property and value universally*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-/*Styling starts here*/
-body{
-    background-color: var(--Cream);
-    font-size: 0px;
-    margin-left: 10px;
-}
-main{
-    float: right;
-    margin-top: -500px;
-    /*display: flex;/*how i joined the image and info blocks together*/
-    /*margin-top:100px;*/
+:root {
+    /* primary */
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    /* neutral */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+  }
+section{
+    height: 100vh;/*means element should occupy 100% of the viewport height*/    
+    display:flex;/*place elements of product description side by side with image*/
+    justify-content: center;/*places all elements within section tag in the center of the screen*/
+    align-items: center;/*gives all elements within section tag equal space at top and bottom*/    
+    
 }
 .desktop_image{
-    background-image: url(/images/image-product-desktop.jpg);
-    background-size: 300px 500px;/*actually causes the image to show up on the screen*/
-    background-repeat: no-repeat;
-    height:500px;
-    margin-left: 460px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: 100px;      
+    display:none;
+}
+.desktop_image, .product_info{
+    height:400px;
+    width:350px;
+    background: white;
+}
+.mobile_image, .product_info{
+    display:flex;
+    width:440px;
 }
 .mobile_image{
-    display: nne;
-}
-/*All this is styling for the product description write up, price and button*/
-h4{
-    font-size: 12px;
-    font-family:Tahoma;
-    font-weight: 200;
-    letter-spacing: 7px;
-    margin-top: -2px;
-    color: hsl(228, 12%, 48%);
-}
-p{
-    color: hsl(228, 12%, 48%);
-}
-button{
-    background-color: var(--Dark-cyan);
-    width:250px;
-    height:50px;
-    border-style: none;
-    border-radius: 10px;
-    color:white;
-    font-weight: bold; 
-    position: relative; /*places button under the cart*/
-      
-}   
-button:hover{
-    background-color:hsl(158, 49%, 21%);
-    cursor: pointer;
-}
-.button{
-    text-align: center;
-    margin-top: -20px;
-    
-} 
-.icon_cart{
-    position: absolute;/*places cart over the button*/
-    width:15px;
-    z-index: 1;/*actually shows the cart*/
-    margin-left: 60px;
-    margin-top: 17px;
-} 
-.product_info{
-    background-color: white;
-    height: 500px;
-    max-width:300px;
-    margin-right: 460px;
-    font-size: 23px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;       
+    overflow: hidden;
 }
-.product_description{
-    padding:30px;
+.product_info{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:0 2rem;
+    flex-direction: column;/*sets the content of the product info div to flex in a column instead of a row*/
+    justify-content: space-around;
 }
-.product_name{
-    font-size: 40px;
-    line-height: 35px;
-    margin-top: -1px;
-}
-.description{
-    font-size: 14px;
-    font-family:Tahoma;
-    font-weight: 200;
-    max-width: 200px;
-    margin-top: -2px; 
-    line-height: 25px;  
-}
-.prices{
-    display: flex;/*make prices appear side by side*/
-    margin-top: -5px;
-}
-.discount_price{
-    color:var(--Dark-cyan);
-    font-size: 35px;
-    font-weight: 800;
-}
-.sale_price{
-    font-size: 18px;
-    margin-top: 45px;
-    margin-left: 20px;
-    text-decoration: line-through;
+img{
+    width:100%;
 }
