@@ -1,8 +1,13 @@
 @media only screen and (max-width:375px){
-    .mobile_image{
-        background-image: url(../images/image-product-mobile.jpg);
-    }
+   .desktop_image{
+    display: none;
+   }
+   .mobile_image{
+    background-image: url(/images/image-product-mobile.jpg);
     
+    background-size: 686px 480px;
+    height:480px;
+   }
     
 
 

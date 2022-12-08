@@ -16,16 +16,25 @@ body{
     margin-left: 10px;
 }
 main{
-    margin-left: 450px;
-    display: inline-block;/*how i joined the image and info blocks together*/
-    margin-top:100px;
+    float: right;
+    margin-top: -500px;
+    /*display: flex;/*how i joined the image and info blocks together*/
+    /*margin-top:100px;*/
 }
-img{
-    max-width: 300px;
+.desktop_image{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: 300px 500px;/*actually causes the image to show up on the screen*/
+    background-repeat: no-repeat;
+    height:500px;
+    margin-left: 460px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;  
-    
+    border-bottom-left-radius: 10px;
+    margin-top: 100px;      
 }
+.mobile_image{
+    display: nne;
+}
+/*All this is styling for the product description write up, price and button*/
 h4{
     font-size: 12px;
     font-family:Tahoma;
@@ -33,7 +42,6 @@ h4{
     letter-spacing: 7px;
     margin-top: -2px;
     color: hsl(228, 12%, 48%);
-
 }
 p{
     color: hsl(228, 12%, 48%);
@@ -41,20 +49,14 @@ p{
 button{
     background-color: var(--Dark-cyan);
     width:250px;
-    height:40px;
+    height:50px;
     border-style: none;
     border-radius: 10px;
     color:white;
     font-weight: bold; 
-    position: relative; /*places button under the cart*/  
-}
-.icon_cart{
-    position: absolute;/*places cart over the button*/
-    width:15px;
-    z-index: 1;/*actually shows the cart*/
-    margin-left: 60px;
-    margin-top: 10px;
-}    
+    position: relative; /*places button under the cart*/
+      
+}   
 button:hover{
     background-color:hsl(158, 49%, 21%);
     cursor: pointer;
@@ -64,14 +66,19 @@ button:hover{
     margin-top: -20px;
     
 } 
-
+.icon_cart{
+    position: absolute;/*places cart over the button*/
+    width:15px;
+    z-index: 1;/*actually shows the cart*/
+    margin-left: 60px;
+    margin-top: 17px;
+} 
 .product_info{
     background-color: white;
-    height: 450px;
+    height: 500px;
     max-width:300px;
-    margin-right: 450px;
+    margin-right: 460px;
     font-size: 23px;
-    float: right; 
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;       
 }
@@ -88,8 +95,8 @@ button:hover{
     font-family:Tahoma;
     font-weight: 200;
     max-width: 200px;
-    margin-top: -2px;
-    
+    margin-top: -2px; 
+    line-height: 25px;  
 }
 .prices{
     display: flex;/*make prices appear side by side*/
@@ -97,12 +104,12 @@ button:hover{
 }
 .discount_price{
     color:var(--Dark-cyan);
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
 }
 .sale_price{
-    font-size: 15px;
-    margin-top: 38px;
+    font-size: 18px;
+    margin-top: 45px;
     margin-left: 20px;
     text-decoration: line-through;
 }
