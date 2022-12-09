@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
-/*applies every property and value universally*/
+/*The * applies every property and value universally*/
 *{
     padding: 0;
     margin: 0;
@@ -10,42 +10,97 @@
     /* primary */
     --darkCyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
+    --darkercyan:hsl(158, 55%, 19%);
     /* neutral */
     --veryDarkBlue: hsl(212, 21%, 14%);
     --darkGrayishBlue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
-  }
-section{
-    height: 100vh;/*means element should occupy 100% of the viewport height*/    
-    display:flex;/*place elements of product description side by side with image*/
-    justify-content: center;/*places all elements within section tag in the center of the screen*/
-    align-items: center;/*gives all elements within section tag equal space at top and bottom*/    
+}
+.attribution{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.attribution a{
+    color:blue;
+    font-weight: 100px;
+}
+.container{
     
+
 }
-.desktop_image{
-    display:none;
+
+/*this rule below, scales down images to automatically fit to the screen*/
+img{
+    max-inline-size: 100%;
+    block-size: auto;/*means aspect ration of images, will remain the same in any screen size*/
 }
-.desktop_image, .product_info{
-    height:400px;
-    width:350px;
-    background: white;
+div img{
+    height: 500px;
 }
-.mobile_image, .product_info{
-    display:flex;
-    width:440px;
+body{
+    background-color: var(--cream);
+}
+section{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    float: right;
+    content:flex;
+}
+p{
+    font-family: montserrat;
+    color:var(--darkGrayishBlue);
+}
+h1{
+    font-family: fraunces;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 30px;
 }
 .mobile_image{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
+    display: none;
 }
 .product_info{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding:0 2rem;
-    flex-direction: column;/*sets the content of the product info div to flex in a column instead of a row*/
-    justify-content: space-around;
+    background-color: var(--white);
+    max-width: 320px;
+    height:500px;
+    padding:30px;
 }
-img{
-    width:100%;
+.product_info p{
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 15px;    
 }
+span{
+    font-size: 30px;
+    font-family: fraunces;
+    color: var(--darkCyan);
+}
+s{
+    margin-left: 20px;
+}
+button{
+    background-color: var(--darkCyan);
+    border-style: none;
+    width:250px;
+    height:40px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+a{
+    color:var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+button img{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+
