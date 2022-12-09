@@ -29,22 +29,14 @@ img{
     max-inline-size: 100%;
     block-size: auto;/*means aspect ration of images, will remain the same in any screen size*/
 }
-.desktop_image{
-    height: 500px;
-    width:320px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.mobile_image{
-    display: none;
-}
 body{
     background-color: var(--cream);   
     margin-top: 100px; 
 }
 section{
     display:flex;
-    justify-content: center;   
+    justify-content: center;
+      
 }
 p{
     font-family: montserrat;
@@ -55,19 +47,6 @@ h1{
     font-size: 40px;
     line-height: 40px;
     margin-top: 30px;
-}
-.product_info{
-    background-color: var(--white);
-    max-width: 320px;
-    height:500px;
-    padding:30px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.product_info p{
-    margin-top: 20px;
-    line-height: 20px;
-    font-size: 15px;    
 }
 span{
     font-size: 30px;
@@ -86,6 +65,9 @@ button{
     margin-top: 50px;
     border-radius: 10px;
 }
+button:hover{
+    background-color: var(--darkercyan);
+}
 a{
     color:var(--white);
     text-decoration: none;
@@ -95,29 +77,34 @@ button img{
     width: 15px;
     height: 15px;
 }
-
-
-@media screen and (max-width: 600px){
-    .desktop_image{
-        display:none;
-    }
-    .mobile_image{
-        height: 500px;
-        width:320px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .product_info{
-        flex: none;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 0px;
-        
-    }
-    section{
-       
-    }
+.desktop_image{
+    height: 100%;
+    width:320px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
+.mobile_image{
+    display:none
+}
+
+
+.product_info{
+    background-color: var(--white);
+    max-width: 320px;
+    height:500px;
+    padding:30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product_info p{
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 15px;    
+}
+
+
+
+
 
 
 
