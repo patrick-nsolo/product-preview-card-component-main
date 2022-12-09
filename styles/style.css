@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
 /*The * applies every property and value universally*/
 *{
-    padding: 0;
+    padding: 0px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -17,36 +17,34 @@
     --white: hsl(0, 0%, 100%);
 }
 .attribution{
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 .attribution a{
     color:blue;
-    font-weight: 100px;
+    font-weight: lighter;
 }
-.container{
-    
-
-}
-
 /*this rule below, scales down images to automatically fit to the screen*/
 img{
     max-inline-size: 100%;
     block-size: auto;/*means aspect ration of images, will remain the same in any screen size*/
 }
-div img{
+.desktop_image{
     height: 500px;
+    width:320px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mobile_image{
+    display: none;
 }
 body{
-    background-color: var(--cream);
+    background-color: var(--cream);   
+    margin-top: 100px; 
 }
 section{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    float: right;
-    content:flex;
+    display:flex;
+    justify-content: center;   
 }
 p{
     font-family: montserrat;
@@ -58,14 +56,13 @@ h1{
     line-height: 40px;
     margin-top: 30px;
 }
-.mobile_image{
-    display: none;
-}
 .product_info{
     background-color: var(--white);
     max-width: 320px;
     height:500px;
     padding:30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .product_info p{
     margin-top: 20px;
@@ -80,6 +77,7 @@ span{
 s{
     margin-left: 20px;
 }
+/*button style*/
 button{
     background-color: var(--darkCyan);
     border-style: none;
@@ -96,6 +94,29 @@ a{
 button img{
     width: 15px;
     height: 15px;
+}
+
+
+@media screen and (max-width: 600px){
+    .desktop_image{
+        display:none;
+    }
+    .mobile_image{
+        height: 500px;
+        width:320px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .product_info{
+        flex: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+        
+    }
+    section{
+       
+    }
 }
 
 

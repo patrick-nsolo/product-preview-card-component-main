@@ -13,8 +13,13 @@
 <body>
   <div class="container">
     <section>
-      <div class="mobile_image"><img src="/images/image-product-mobile.jpg" alt="mobile-product-image"/></div>
-      <div class="desktop_image"><img src="/images/image-product-desktop.jpg" alt="desktop-product-image"/></div>
+      <picture>
+        <img  class="mobile_image" media="(min-width=375px)" srcset="/images/image-product-mobile.jpg"/>
+        <img class="desktop_image" media="(min-width=600px)" srcset="/images/image-product-desktop.jpg"/>
+      </picture>
+      <!--<div class="mobile_image"></div>
+      <!--<div class="mobile_image"><img src="/images/image-product-mobile.jpg" alt="mobile-product-image"/></div>
+      <div class="desktop_image"><img src="/images/image-product-desktop.jpg" alt="desktop-product-image"/></div>-->
       <div class="product_info">
           <p>PERFUME</p>
           <h1 class="product_name">Gabrielle Essence Eau De Parfum</h1>
