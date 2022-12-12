@@ -1,3 +1,22 @@
-@media screen and (max-width: 600px){
-
+@media screen and (min-width: 600px){
+    img{
+        max-inline-size: 100%;
+        block-size: auto;/*means aspect ratio of images, will remain the same in any screen size*/
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+        /*width: 300px;*/
+    }
+    body{
+        display:block;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;   
+    }
+    .product_info{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
 }
